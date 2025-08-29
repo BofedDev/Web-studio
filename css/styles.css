@@ -148,7 +148,20 @@ body {
 }
 
 /* DO */
-
+.do-container {
+	text-align: center;
+	font-weight: 700;
+	font-size: 36px;
+	padding: 0px 15px;
+}
+.do-images {
+	margin-top: 50px;
+	display: flex;
+	gap: 30px;
+}
+.do {
+	padding-bottom: 94px;
+}
 
 /* TEAMS */
 .team {
