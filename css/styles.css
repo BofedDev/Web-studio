@@ -78,7 +78,7 @@ body {
 
 .header-menu a,
 .header-second-menu a {
-	color: #212121;
+	color: #757575;
 	text-decoration: none;
 }
 
@@ -133,7 +133,6 @@ body {
 	min-width: 101px;
 	display: flex;
 	margin: 94px 0px;
-	padding: 0px 15px;
 	gap: 30px;
 	text-transform: uppercase;
 }
@@ -152,7 +151,6 @@ body {
 	text-align: center;
 	font-weight: 700;
 	font-size: 36px;
-	padding: 0px 15px;
 }
 .do-images {
 	margin-top: 50px;
@@ -213,4 +211,22 @@ body {
 .team-card-desc {
 	color: #757575;
 	margin-top: 10px;
+}
+
+footer {
+	padding: 60px 0px;
+	background: #2F303A;
+}
+.footer-container {
+	font-size: 14px;
+	font-weight: 400;
+	color: #FFFFFF;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+}
+.footer-container a {
+	text-decoration: none;
+	color: #757575;
 }
