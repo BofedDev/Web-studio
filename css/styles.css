@@ -225,6 +225,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 9px;
+	align-items: start;
 }
 .footer-container a {
 	text-decoration: none;
