@@ -277,6 +277,7 @@ footer {
 }
 
 .portfolio-card {
+	position: relative;
 	flex: 1 1 30%;
 	overflow: hidden;
 	border: var(--mainBg-color);
@@ -301,6 +302,7 @@ footer {
 }
 
 /*Position*/
+
 .do-card {
 	position: relative;
 }
@@ -315,4 +317,22 @@ footer {
 	left: 0;
 	right: 0;
 	padding: 27px 40px;
+}
+
+
+/*Second page hover*/
+.portfolio-card-hover {
+	background: rgba(33, 150, 243, 0.9);
+	font-size: 18px;
+	padding: 63px 24px;
+	opacity: 0;
+	position: absolute;
+	inset: 0;
+	height: 294px;
+	width: 100%;
+	color: var(--main-color);
+}
+
+.portfolio-card:hover .portfolio-card-hover{
+	opacity: 1;
 }
