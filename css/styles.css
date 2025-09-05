@@ -32,7 +32,6 @@
 	font-display: swap;
 }
 
-
 :root {
 	--main-color: #fff;
 	--second-color: #757575;
@@ -60,6 +59,12 @@ body {
 	border: 1px solid #ECECEC;
 	padding: 25px 0;
 	font-weight: 500;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	background: var(--main-color);
 }
 
 .header-container {
@@ -68,7 +73,7 @@ body {
 }
 
 
-.header-menu > ul {
+.header-menu {
 	display: flex;
 	gap: 50px;
 	margin-left: 90px;
@@ -84,13 +89,13 @@ body {
 	gap: 50px;
 }
 
-.header-menu button,
+.header-menu a,
 .header-second-menu a {
 	color: var(--second-color);
 	text-decoration: none;
 }
 
-.header-menu button:hover,
+.header-menu a:hover,
 .header-second-menu a:hover {
 	color: var(--button-color);
 }
@@ -271,7 +276,7 @@ footer {
 }
 
 .portfolio-cards {
-	margin-top: 50px;
+	margin-top: 100px;
 	display: flex;
 	gap: 30px;
 	flex-wrap: wrap;
@@ -378,7 +383,7 @@ footer {
 }
 
 /*Filtres */
-.filtres {
+.filters {
 	top: 100%;
 	left: 0;
 	display: none;
@@ -387,22 +392,41 @@ footer {
 	background: var(--mainBg-color);
 	color:var(--second-color);
 }
-.filtres button {
+.filters a {
 	display: block;
 }
-.filtres-btn {
+.filters-btn {
 	position: relative;
 }
 
-.filtres-btn:hover .filtres{
+.filters-btn:hover .filters{
 	display: block;
 }
-.filtres-btn li {
+.filters-btn li{
 	padding-top: 10px;
 }
-.filtres-btn li :first-child {
+.filters-btn li:first-child {
 	padding-top:0px; 
 }
-.filtres-btn li:hover {
+.filters-btn li:hover {
 	color:var(--button-color);
+}
+
+.category-all {
+	position: absolute;
+	display: none;
+	background: var(--mainBg-color);
+	color:var(--second-color);
+	right: 100%;
+	bottom: 0;
+	padding: 10px 20px 0px;
+}
+
+.filter:hover .category-all {
+	display: block;
+}
+
+
+.filter {
+	position: relative;
 }
