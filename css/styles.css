@@ -38,6 +38,7 @@
 	--second-color: #757575;
 	--button-color: #2196F3;
 	--mainBg-color: #EEEEEE;
+	--second-color: #212121;
 }
 /* GLOBAL CLASSES */
 body {
@@ -67,7 +68,7 @@ body {
 }
 
 
-.header-menu {
+.header-menu > ul {
 	display: flex;
 	gap: 50px;
 	margin-left: 90px;
@@ -83,13 +84,13 @@ body {
 	gap: 50px;
 }
 
-.header-menu a,
+.header-menu button,
 .header-second-menu a {
 	color: var(--second-color);
 	text-decoration: none;
 }
 
-.header-menu a:hover,
+.header-menu button:hover,
 .header-second-menu a:hover {
 	color: var(--button-color);
 }
@@ -374,4 +375,34 @@ footer {
 	height: 294px;
 	width: 100%;
 	position: relative;
+}
+
+/*Filtres */
+.filtres {
+	top: 100%;
+	left: 0;
+	display: none;
+	position: absolute;
+	padding-top: 10px;
+	background: var(--mainBg-color);
+	color:var(--second-color);
+}
+.filtres button {
+	display: block;
+}
+.filtres-btn {
+	position: relative;
+}
+
+.filtres-btn:hover .filtres{
+	display: block;
+}
+.filtres-btn li {
+	padding-top: 10px;
+}
+.filtres-btn li :first-child {
+	padding-top:0px; 
+}
+.filtres-btn li:hover {
+	color:var(--button-color);
 }
