@@ -328,8 +328,6 @@ footer {
 	opacity: 0;
 	position: absolute;
 	inset: 0;
-	height: 294px;
-	width: 100%;
 	color: var(--main-color);
 }
 
@@ -367,4 +365,13 @@ footer {
 	border-radius: 6px;
 	color: #fff;
 	cursor: pointer;
+}
+
+
+/*Add image-container */
+
+.image-container {
+	height: 294px;
+	width: 100%;
+	position: relative;
 }
