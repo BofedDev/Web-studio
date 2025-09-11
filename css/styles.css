@@ -41,6 +41,7 @@
 }
 /* GLOBAL CLASSES */
 body {
+	position: relative;
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.3;
 	font-size: 14px;
@@ -103,12 +104,11 @@ body {
 
 /* HERO SECTION */
 
-.hero {
-	background: #2F303A;
-	text-align: center;
-}
+
 
 .hero-inner {
+	position: relative;
+	z-index: 5;
 	max-width: 700px;
 	min-height: 600px;
 	margin: 0 auto;
@@ -135,7 +135,7 @@ body {
 	border-radius: 4px;
 	cursor: pointer;
 	align-self: center;
-}
+} 
 
 
 /* ABOUT */
@@ -154,9 +154,6 @@ body {
 	color: #757575;
 	font-weight: 400;
 	padding: 10px 0px 0px;
-}
-.about-container div {
-	width: 270px;
 }
 
 /* DO */
@@ -429,4 +426,82 @@ footer {
 
 .filter {
 	position: relative;
+}
+
+/*Backgrounds*/
+.hero {
+	text-align: center;
+	padding-top: 80px;
+	position: relative;
+	background: url(../images/heroImg.jpg) no-repeat 0 0 / cover content-box ;
+	height: 37.5vw;
+	width: 100vw;
+}
+.hero::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background:rgba(47, 48, 58, 0.4);
+}
+
+.about-container div {
+	position: relative;
+	overflow: hidden;
+	padding: 150px 0 0;
+	width: 270px;
+	height: 251px;
+}
+.about-1 {
+	background: url(../images/about1.png) no-repeat center 25px / 70px 70px;
+}
+.about-1::after {
+	position: absolute;
+	inset: 0px;
+	z-index: -1;
+	content: '';
+	background: #F5F4FA;
+	border-radius: 4px;
+	height: 120px;
+}
+
+.about-2 {
+	background: url(../images/about2.png) no-repeat center 25px / 70px 70px;
+}
+
+.about-2::after {
+	position: absolute;
+	inset: 0px;
+	z-index: -1;
+	content: '';
+	background: #F5F4FA;
+	border-radius: 4px;
+	height: 120px;
+}
+
+.about-3 {
+	background: url(../images/about3.png) no-repeat center 25px / 70px 70px;
+}
+
+.about-3::after {
+	position: absolute;
+	inset: 0px;
+	z-index: -1;
+	content: '';
+	background: #F5F4FA;
+	border-radius: 4px;
+	height: 120px;
+}
+
+.about-4 {
+	background: url(../images/about4.png) no-repeat center 25px / 70px 70px;
+}
+
+.about-4::after {
+	position: absolute;
+	inset: 0px;
+	z-index: -1;
+	content: '';
+	background: #F5F4FA;
+	border-radius: 4px;
+	height: 120px;
 }
