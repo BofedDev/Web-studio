@@ -33,11 +33,12 @@
 }
 
 :root {
+	--anactive-svg: rgba(175, 177, 184, 1);
 	--main-color: #fff;
 	--second-color: #757575;
 	--button-color: #2196F3;
 	--mainBg-color: #EEEEEE;
-	--second-color: #212121;
+
 }
 /* GLOBAL CLASSES */
 body {
@@ -212,6 +213,7 @@ body {
 }
 
 .team-card-inner {
+	width: 270px;
 	padding: 30px;
 	font-size: 16px;
 	background: var(--main-color);
@@ -451,57 +453,75 @@ footer {
 	width: 270px;
 	height: 251px;
 }
-.about-1 {
-	background: url(../images/about1.png) no-repeat center 25px / 70px 70px;
-}
 .about-1::after {
 	position: absolute;
 	inset: 0px;
-	z-index: -1;
 	content: '';
-	background: #F5F4FA;
+	background: #F5F4FA url(../images/about1.png) no-repeat center 25px / 70px 70px;
 	border-radius: 4px;
 	height: 120px;
 }
 
-.about-2 {
-	background: url(../images/about2.png) no-repeat center 25px / 70px 70px;
-}
 
 .about-2::after {
 	position: absolute;
 	inset: 0px;
-	z-index: -1;
 	content: '';
-	background: #F5F4FA;
+	background: #F5F4FA url(../images/about2.png) no-repeat center 25px / 70px 70px;
 	border-radius: 4px;
 	height: 120px;
 }
 
-.about-3 {
-	background: url(../images/about3.png) no-repeat center 25px / 70px 70px;
-}
 
 .about-3::after {
 	position: absolute;
 	inset: 0px;
-	z-index: -1;
 	content: '';
-	background: #F5F4FA;
+	background: #F5F4FA url(../images/about3.png) no-repeat center center / 70px 70px;
 	border-radius: 4px;
 	height: 120px;
 }
 
-.about-4 {
-	background: url(../images/about4.png) no-repeat center 25px / 70px 70px;
-}
 
 .about-4::after {
 	position: absolute;
 	inset: 0px;
-	z-index: -1;
 	content: '';
-	background: #F5F4FA;
+	background: #F5F4FA url(../images/about4.png) no-repeat center center / 70px 70px;
 	border-radius: 4px;
 	height: 120px;
+}
+
+/*SVG*/
+.messengers {
+	margin-top: 28px;
+	display: flex;
+	gap: 10px;
+}
+
+.svg-icon:hover {  
+	fill: var(--main-color);
+	background: var(--button-color);
+	border-radius: 50%;
+}
+.svg-icon:hover a{
+	color: var(--main-color);
+}
+
+.svg-icon svg {
+	width: 20px;
+	height: 20px;
+}
+.svg-icon {
+	width: 44px;
+	height: 44px;
+	display: flex;
+ 	align-items: center;
+  	justify-content: center;
+	background: transparent;
+}
+.svg-icon a{
+	color: var(--anactive-svg);
+	display: block;
+
 }
