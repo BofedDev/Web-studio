@@ -38,6 +38,7 @@
 	--second-color: #757575;
 	--button-color: #2196F3;
 	--mainBg-color: #EEEEEE;
+	--third-color: #212121;
 
 }
 /* GLOBAL CLASSES */
@@ -493,6 +494,7 @@ footer {
 }
 
 /*SVG*/
+/*TEAM*/
 .messengers {
 	margin-top: 28px;
 	display: flex;
@@ -500,7 +502,6 @@ footer {
 }
 
 .svg-icon:hover {  
-	fill: var(--main-color);
 	background: var(--button-color);
 	border-radius: 50%;
 }
@@ -516,12 +517,49 @@ footer {
 	width: 44px;
 	height: 44px;
 	display: flex;
- 	align-items: center;
-  	justify-content: center;
+	align-items: center;
+	justify-content: center;
 	background: transparent;
 }
 .svg-icon a{
 	color: var(--anactive-svg);
 	display: block;
 
+}
+/*CUSTOMERS*/
+.customers {
+	padding-top: 94px;
+	text-align: center;
+}
+.customers h2 {
+	color: var(--third-color);
+	font-size: 36px;
+	font-weight: 700;
+}
+.customers-cards{
+	margin: 50px 0px;
+	display: flex;
+	gap: 30px;
+}
+.customers-cards svg {
+	width: 106px;
+	height: 60px;
+}
+.customers-cards a {
+	color: #AFB1B8;
+}
+.customers-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #AFB1B8;
+	width: 170px;
+	height: 92px;
+}
+
+.customers-card:hover{
+	border:var(--button-color) solid 1px;
+}
+.customers-card:hover a{
+	color: var(--button-color);
 }
