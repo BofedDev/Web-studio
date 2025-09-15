@@ -563,3 +563,47 @@ footer {
 .customers-card:hover a{
 	color: var(--button-color);
 }
+
+/*FOOTER*/
+
+.footer .container {
+	display: flex;
+	gap: 130px;
+	align-items: center;
+}
+.footer-nav h3{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	color: var(--main-color);
+}
+
+.footer-messengers {
+	display: flex;
+	gap: 10px;
+}
+.footer-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background: rgba(109, 109, 109, 0.4);
+	width: 44px;
+	height: 44px;
+	
+}
+.footer-icon a {
+	display: block;
+	color: var(--main-color);
+}
+.footer-icon svg {
+	width: 20px;
+	height: 20px;
+}
+
+.footer-icon:hover {
+	background: var(--button-color);
+}
+.footer-messengers li {
+	margin-top: 20px;
+}
