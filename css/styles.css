@@ -95,12 +95,14 @@ body {
 
 .header-menu a,
 .header-second-menu a {
+	transition: all 0.3s linear;
 	color: var(--second-color);
 	text-decoration: none;
 }
 
 .header-menu a:hover,
 .header-second-menu a:hover {
+	transform: scale(1.2);
 	color: var(--button-color);
 }
 
@@ -554,6 +556,7 @@ footer {
 	color: #AFB1B8;
 }
 .customers-card {
+	transition: all linear 0.5s;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -563,6 +566,7 @@ footer {
 }
 
 .customers-card:hover{
+	transform: scale(1.2);
 	border:var(--button-color) solid 1px;
 }
 .customers-card:hover a{
@@ -631,7 +635,6 @@ footer {
 	margin-left: auto;
 	margin-right: 0;
 }
-
 .header-burger span {
 	width: 100%;
 	background: var(--third-color);
@@ -663,6 +666,7 @@ footer {
 #burger-check{
 	display: none;
 }
+
 #burger-check:checked +.filters-btn .filters{
 	display: block;
 }
