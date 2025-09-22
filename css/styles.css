@@ -964,3 +964,23 @@ footer {
 }
 }
 
+
+@media (min-width: 1921px) {
+	.container {
+		width: 1920px;
+	}
+	.customers-cards {
+	gap: 7%;
+	
+}
+.customers-card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #AFB1B8;
+	width: 15%;
+	height:100%;
+}
+
+}
+
